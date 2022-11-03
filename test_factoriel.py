@@ -1,5 +1,5 @@
 import unittest 
-from factoriel import Math
+from factoriel_funct import Math
 
 class Test_factoriel(unittest.TestCase):
     def setUp(self):
