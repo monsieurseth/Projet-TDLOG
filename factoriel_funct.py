@@ -1,11 +1,27 @@
-class Math:
-    def __init__(self,n):
-        self.n =n
-    def factoriel(self):
-        self.fact = 1
-        if self.n== 0:
-            return f"{self.n}! = 1"
+
+def factorielle(n):
+        fact = 1
+        if n== 0:
+            return f"{n}! = 1"
         else:
-            for i in range(1,self.n+1):
-                self.fact *=i
-            return f"{self.n}! = {self.fact}"
+            for i in range(1,n+1):
+                fact *=i
+            return f"{n}! = {fact}"
+
+resultat =factorielle(4)
+print(resultat)
+
+# Nous pouvons le faire de façon recursive aussi  
+
+
+def factorielle(n):
+    if n==0:
+        return 1
+    else:
+        n = n*factorielle(n-1)
+        return n
+
+res = factorielle(4)
+
+print(res)
+
