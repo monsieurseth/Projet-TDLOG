@@ -7,6 +7,7 @@ class Battlefield:
     
     def __init__(self) -> None:
         self.vessels_list = []
+        self.grid = np.zeros((100,100,3)) 
     
     def add_vessel(self, vessel: Vessel) -> None:
         if not self.is_available(vessel.coordinates):
