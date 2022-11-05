@@ -36,14 +36,7 @@ class Battlefield:
         return total
            
 
-champ_de_bataille = Battlefield ()
-vaisseau1 = Cruiser((0,0,0))
-vaisseau2 = Cruiser ((0,1,0))
-vaisseau3 = Cruiser((0,0,0))
-champ_de_bataille.add_vessel(vaisseau1)
-champ_de_bataille.add_vessel(vaisseau2)
-#champ_de_bataille.add_vessel(vaisseau3)
-print (champ_de_bataille.vessels_list)
+
 
 
 
